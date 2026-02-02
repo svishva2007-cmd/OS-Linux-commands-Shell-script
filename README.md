@@ -23,44 +23,66 @@ Testing the commands for the desired output.
 # COMMANDS:
 ### Create the following files file1, file2 as follows:
 cat > file1
-```
-chanchal singhvi
-c.k. shukla
-s.n. dasgupta
-sumit chakrobarty
-^d
+~~~
+S.Vishvabala
+SP.Swaminathan
+S.Jayalakshmi
 ```
 cat > file2
 ```
-anil aggarwal
-barun sengupta
-c.k. shukla
-lalit chowdury
-s.n. dasgupta
+rithesh
+bala
+vishva
+naresh
+arasu
 ^d
 ```
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
-
+~~~
+S.Vishvabala
+SP.Swaminathan
+S.Jayalakshmi
+~~~
 
 cat < file2
 ## OUTPUT
-
-
+~~~
+rithesh
+bala
+vishva
+naresh
+arasu
+~~~
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+~~~
+ file1 file2 differ: byte 2, line 1
+ ~~~
 comm file1 file2
  ## OUTPUT
-
- 
+~~~
+	ant
+apple
+banana
+	bear
+carrot
+	cat
+ ~~~
 diff file1 file2
 ## OUTPUT
-
-
+~~~
+1,3c1,3
+< apple
+< banana
+< carrot
+---
+> ant
+> bear
+> cat
+~~~
 #Filters
 
 ### Create the following files file11, file22 as follows:
@@ -82,65 +104,73 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
-
-
-
+~~~
+Hel
+Thi
+~~~
 cut -d "|" -f 1 file22
 ## OUTPUT
-
-
-
+~~~
+1001 
+1002 
+1003 
+~~~
 cut -d "|" -f 2 file22
 ## OUTPUT
-
-
-cat < newfile 
+~~~
+Ram 
+ tom 
+ Joe
+~~~
+cat > newfile 
 ```
 Hello world
 hello world
 ^d
 ````
-cat > newfile 
+cat < newfile 
 Hello world
 hello world
  
 grep Hello newfile 
 ## OUTPUT
+~~~
+<img width="348" height="51" alt="image" src="https://github.com/user-attachments/assets/3a4a5406-f880-4ad3-9b38-c32045c2aded" />
 
-
-
+~~~
 grep hello newfile 
 ## OUTPUT
+~~~
+<img width="348" height="51" alt="image" src="https://github.com/user-attachments/assets/f892ebef-0c5d-489b-8097-82469536cd84" />
 
-
-
-
+~~~
 grep -v hello newfile 
 ## OUTPUT
-
-
-
+~~~
+Hello world
+~~~
 cat newfile | grep -i "hello"
 ## OUTPUT
+~~~
+<img width="452" height="73" alt="image" src="https://github.com/user-attachments/assets/61528813-769f-440d-8ff2-47489f7a78b8" />
 
-
-
-
+~~~
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
-
-
-
+~~~
+2
+~~~
 grep -R ubuntu /etc
 ## OUTPUT
+~~~
+<img width="1843" height="930" alt="image" src="https://github.com/user-attachments/assets/ec4411c4-0592-47dc-a5b7-79b258adf4ed" />
 
-
-
+~~~
 grep -w -n world newfile   
 ## OUTPUT
-
+~~~
+<img width="389" height="80" alt="image" src="https://github.com/user-attachments/assets/9833447d-17cb-4e51-89d9-3046853d5b9c" />
+~~~
 
 cat < newfile 
 ```
@@ -163,25 +193,30 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+~~~
+<img width="451" height="72" alt="image" src="https://github.com/user-attachments/assets/94b5c50a-3eca-403c-aba6-334905aa0075" />
 
-
-
+~~~
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+~~~
+<img width="451" height="72" alt="image" src="https://github.com/user-attachments/assets/1979e7b5-92cd-48c4-ba71-f36eab934383" />
+~~~
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
+~~~
+<img width="467" height="75" alt="image" src="https://github.com/user-attachments/assets/2a8335f5-9dad-44bd-bc47-bce72141127e" />
+~~~
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
-
-
+~~~
+<img width="466" height="52" alt="image" src="https://github.com/user-attachments/assets/e9b28206-ad20-4597-96ee-09c6cf7d1248" />
+~~~
 egrep '(world$)' newfile 
 ## OUTPUT
 
