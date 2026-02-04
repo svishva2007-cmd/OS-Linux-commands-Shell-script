@@ -219,38 +219,50 @@ egrep '(^hello)' newfile
 ~~~
 egrep '(world$)' newfile 
 ## OUTPUT
+![image-18](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/7facd439-94d3-4e5e-adb2-853ad1bd6bc7)
 
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
 
+![image-19](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/40aa135b-3fa1-46aa-8253-6a703f7b48d5)
+
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
+![image-20](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/62209b33-310f-4386-aea3-d142a5c0810c)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
+![image-21](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/0152c2fe-457b-4690-849a-f57756272f93)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
+![image-22](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/60e8c4d1-ad89-41c6-bc59-29a898615219)
+
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+
+![image-23](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/fcf5b29f-3e8e-486f-8c97-cbc0e84d45d8)
 
 
 egrep l{2} newfile
 ## OUTPUT
 
+![image-24](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/57fd296b-8124-46f5-809f-d604bf3f32a5)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+
+![image-25](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/fd083fc1-9048-4442-9046-7b53de83095c)
 
 
 cat > file23
@@ -270,79 +282,97 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 
+![image-26](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/d9bd46cd-fdb6-4c13-844b-0a4ffedf951e)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
 
+![image-27](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/f60eb1ea-a356-4a14-af2c-69503d475b02)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
+![image-28](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/3cce3526-d915-4693-a14a-80f4a88aabfc)
+
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+![image-29](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/29de2ae9-3534-41c6-b584-4fd63ea15230)
 
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
+![image-30](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/27ff55dd-f7a8-4934-9234-af87f38063e4)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
+![image-31](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/b72812ad-2031-4998-834f-d1aa4e7d6570)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
+![image-32](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/481af551-915d-4ee4-affb-2528903d3535)
 
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
-
+![image-33](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/c4ce50db-b01c-48f0-b022-b0fdc8c46639)
 
 seq 10 
 ## OUTPUT
-
+![image-34](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/2e43f350-47fe-4f4f-b559-a5145bac13c6)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![image-35](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/334cef52-f8dd-40f8-b811-edac5bfae54f)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
+![image-36](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/470d9aef-0a7d-4c6b-b67e-9442df4ad226)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+
+![image-37](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/beeb13d9-d0c1-4784-a4f5-5fe355900534)
 
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
+![image-38](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/8ae6ab60-f3ff-4190-a885-c2c5921e998f)
+
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+
+![image-39](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/2a305976-182e-4c36-b54a-914fec39158b)
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
+![image-40](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/6a5520ed-5568-4a42-9647-6277d1b393a6)
+
 
 
 sed -n '2,4{s/$/*/;p}' file23
+## OUTPUT
 
+![image-41](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/03038fff-d49a-4d7c-b043-130d202e2c08)
 
 #Sorting File content
 cat > file21
@@ -355,6 +385,8 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+
+![image-42](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/b5c9289b-32c1-48ae-a0bd-e0c8be1193a8)
 
 
 cat > file22
@@ -369,12 +401,15 @@ cat > file22
 uniq file22
 ## OUTPUT
 
-
+![alt text](image-43.png)
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+
+![image-43](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/724ba449-4db6-4631-9339-80dec3f97217)
+
 
 cat < urllist.txt
 ```
@@ -392,38 +427,49 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
+![image-44](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/6f2cfae7-a399-46ab-bef0-dbdb43a9827f)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
+![image-46](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/ceadf916-c72c-4bcc-874b-2dc7ca9cc011)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
 
+![image-47](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/ade6e389-88d9-4e18-a2b5-9cad8eeab035)
+
 
 mkdir backupdir
  
 mv backup.tar backupdir
-
-cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+
+![image-48](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/5bb41cc5-eb5a-4406-868d-b04a5929d057)
 
 
 tar -xvf backup.tar
 ## OUTPUT
 
+![image-49](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/7f0eb601-551f-47f1-8e00-eec94af72a6a)
+
+
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
+![image-50](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/493fb6bd-f365-4e5b-9f33-3bb16e4fa822)
+
  
 gunzip backup.tar.gz
 ## OUTPUT
+
+![image-51](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/a4c005dd-16b7-405e-a90d-f776c67834c0)
 
  
 # Shell Script
@@ -434,6 +480,9 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+
+![image-52](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/54d1032c-fc93-4b9c-a049-81f72d2e7fd3)
+
 
  
 cat << stop > herecheck.txt
@@ -446,6 +495,8 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+
+![image-53](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/b0f6d3ac-1aab-401d-a68f-fac5190af59d)
 
 
 cat < scriptest.sh 
@@ -485,12 +536,19 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
+![image-54](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/aa9e221b-1914-41c6-96a4-a3480fcc931c)
+
  
 ls file1
 ## OUTPUT
+![image-54](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/7aa3c8d8-08cf-4789-be3e-8eb056aec0c6)
 
 echo $?
 ## OUTPUT 
+
+![image-56](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/b392932f-12c9-47bf-9d86-fb44457adb34)
+
+
 ./one
 bash: ./one: Permission denied
  
@@ -501,6 +559,7 @@ abcd
  
 echo $?
  ## OUTPUT
+![image-57](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/6cac1aec-beb9-4683-91ba-2a6e062a4fd3)
 
 
  
@@ -534,6 +593,7 @@ fi
 ```
 ##OUTPUT
 
+![image-58](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/f8e710dd-372f-4b4c-9db1-efd9aa88e581)
 
 
 chmod 755 strcomp.sh
@@ -541,6 +601,7 @@ chmod 755 strcomp.sh
 ./strcomp.sh 
 ## OUTPUT
 
+![image-59](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/23f2ccf2-f9e4-4dff-98fc-0b3812c642a5)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -567,6 +628,9 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+
+![image-60](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/3a6c2ae0-7cf8-4ca0-8eb5-e174e8a1622e)
+
 
 # check if with file location
 cat>ifnested.sh 
@@ -613,6 +677,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+![image-61](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/7d9c90af-b7a3-4cf6-8965-40370727248e)
 
 
 
@@ -657,6 +722,9 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![image-62](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/f0646e68-4bbe-4c0e-bf34-7212526995d8)
+
+
 
 # check if a file
 cat > ifnested.sh 
@@ -707,6 +775,9 @@ $ chmod 755 ifnested.sh
 $ ./ifnested.sh 
 ##OUTPUT
 
+![image-63](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/446feb99-72a9-496c-b9ac-42f9b0e0c6b6)
+
+
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -735,6 +806,8 @@ $ chmod 755 elifcheck.sh
 $ ./elifcheck.sh 
 ## OUTPUT
 
+![image-64](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/a2ca4461-3b62-41b0-afa0-eb9523ebc501)
+
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -750,6 +823,9 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+
+![image-65](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/8d68fc65-0b14-4777-af74-cefbc365c662)
+
 
 # using the case command
 cat >casecheck.sh 
@@ -769,7 +845,12 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+ ## output
+
+![image-66](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/bf4deead-473f-4b07-b440-bc1e6c3759dd)
+
+
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -785,6 +866,10 @@ $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
  
+ ## OUTPUT
+
+![image-67](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/bacb7046-9079-489a-acff-43e650c8135d)
+
  
 cat untiltest.sh 
 ```bash
@@ -798,7 +883,12 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- 
+
+## OUTPUT
+
+
+![image-68](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/34e7fcfa-aa6b-4a1b-a82c-a81ab7997f53)
+
  
 cat forin1.sh 
 ```bash
@@ -812,6 +902,10 @@ done
  
 $ chmod 755 forin1.sh
  
+ ## output:
+
+![image-69](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/33272df2-f5b8-4bda-99f5-5a048690600c)
+
  
 cat forin2.sh 
 ```bash
@@ -823,21 +917,17 @@ echo “word:$test”
 done
  ```
  
-$ chmod 755 forin2.sh
- 
-cat forin2.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
-```
+
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
  
+ ## output
+
+![image-70](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/c51da2ea-8652-49c3-a893-f64acc51d52d)
+
+
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -848,43 +938,16 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
-cat forin1.sh 
-```bash
-#!/bin/bash
-# basic for command
-for test in Alabama Alaska Arizona Arkansas California Colorado
-do
-echo The next state is $test
-done
-```
-$ chmod 755 forin1.sh
 
-## OUTPUT
-cat forinfile.sh 
-```bash
-#!/bin/bash
-# reading values from a file
-file="cities"
-for state in `cat $file`
-do
-echo "Visit beautiful $file“
-done
-```
-$ chmod 777 forinfile.sh
-$ cat cities
-Hyderabad
-Alampur
-Basara
-Warangal
-Adilabad
-Bhadrachalam
-Khammam
+##output
 
-## OUTPUT
+![image-71](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/ef2f1f17-feed-4357-a5a0-e63e33ea14be)
+
+
 
 
 cat forctype.sh 
+
 ```bash
 #!/bin/bash
 # testing the C-style for loop
@@ -896,6 +959,9 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+
+![image-72](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/3b304910-6ecf-4fa3-85ea-6dec124f087e)
+
 
 cat forctype1.sh 
 ```bash
@@ -909,6 +975,9 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+
+![image-73](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/0a482550-5b9e-4ff8-9e33-54dc8ffa77a5)
+
 
 cat fornested1.sh 
 ```bash
@@ -927,8 +996,9 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+![image-74](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/d60ca9a2-6750-4f0e-bd8a-bad4b996fbce)
 
- 
+
 cat forbreak.sh 
 ```bash
 #!/bin/bash
@@ -943,13 +1013,19 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
+
+
 
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
  
-cat forbreak.sh 
+## OUTPUT
+
+![image-75](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/978f2ab3-ba04-442a-b668-62aa2450402e)
+
+
+cat forcontinue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -969,6 +1045,9 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
+
+![image-76](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/cd016d47-b62c-4697-8211-2ccbb4e91301)
+
  
 cat exread.sh 
 ```bash
@@ -983,6 +1062,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![image-77](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/25960989-f3d5-4a74-9eeb-ad4e77ea6755)
 
 
  cat exread1.sh
@@ -993,12 +1073,13 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
-
+$ ./exread1.sh 
 ## OUTPUT
 
+![image-78](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/33663a39-1b90-46dc-a249-29cce8e18d43)
 
 
-$ ./exread1.sh 
+
  
 cat funcex.sh
 ```bash
@@ -1016,10 +1097,16 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
+
  ./funcex.sh 
+![image-79](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/a353a7b2-7b6e-447f-99d8-eff19742bb64)
+
+
 
  
  ./funcex.sh 1 2
+ ## output:
+![image-80](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/c1b2d17b-036c-4d8b-b615-a4ae510d1db3)
 
  
 cat argshift.sh
@@ -1031,9 +1118,11 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
-
-## OUTPUT
 $ ./argshift.sh 1 2 3
+## OUTPUT
+
+![image-81](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/dc93f107-da58-4069-8676-fa8001a53772)
+
  
  cat argshift1.sh
 ```bash
@@ -1051,6 +1140,9 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
+
+![image-82](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/e260570a-740d-40d6-b3d0-650cf1e0bfe6)
+
  
 cat argshift.sh
 ```bash
@@ -1064,7 +1156,8 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+![image-85 (copy)](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/22c9f9e9-ae69-4152-9768-0122fe2f2a21)
+
  
 cat > nc.awk
 ```bash
@@ -1096,6 +1189,9 @@ ubcdfghj
 awk -f nc.awk data.dat
 ## OUTPUT 
  
+![image-84](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/538413e2-0bfb-498f-bd90-181bb3e71a69)
+
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1123,6 +1219,7 @@ fi
 ```
 ## OUTPUT 
 
+![image-86](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/736ba1b8-9102-4b04-bf53-666e03ad5961)
 
 # RESULT:
 The Commands are executed successfully.
